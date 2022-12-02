@@ -40,7 +40,7 @@ git clone https://github.com/jusangar/docker-compose-ftp-server.git
 
 ### docker-compose.yml
 
-Cambiar las variables `$[USER]` y `$[PASS]` o crear un archivo _==.env==_ en el mismo directorio que apunte a esas variables.
+Cambiar las variables `$[USER]` y `$[PASS]` o crear un archivo _.env_ en el mismo directorio que apunte a esas variables.
 
 Estas variables definen el usuario y la contraseña que gestionará la base de datos.
 
@@ -61,7 +61,7 @@ networks:
 
 ### pureftpd-mysql.conf
 
-Reemplazar `$[USER]` y `$[PASS]` e introducir el mismo que estableció en _==docker-compose.yml==_.
+Reemplazar `$[USER]` y `$[PASS]` e introducir el mismo que estableció en _docker-compose.yml_.
 
 ```sh
 sed 's/$[USER]/usuario/g' pureftpd-mysql.conf
@@ -82,7 +82,7 @@ rm pureftdp.flags
 
 ### Container
 
-Ejecutar el _==docker-compose.yml==_.
+Ejecutar el _docker-compose.yml_.
 
 ```sh
 docker compose up -d
@@ -111,7 +111,7 @@ Conectarse al servidor FTP con las credenciales del usuario `foo` y el puerto `2
 ## Aclaraciones
 ---
 
-El certificado TLS deberá ir en la carpeta _==data==_ con el nombre _==pureftpd.pem==_.
+El certificado TLS deberá ir en la carpeta _data_ con el nombre _pureftpd.pem_.
 
 Hay varias flags forzadas que no se pueden sobrescribir:
 - `--bind 0.0.0.0,2100`
