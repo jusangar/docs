@@ -1,7 +1,7 @@
 
 #### Índice
 ---
-- [[#Prerrequisitos]]
+- [Prerrequisios](#Prerrequisitos)
 - [[#Configuración]]
 	- [[#docker-compose.yml]]
 	- [[#pureftpd-mysql.conf]]
